@@ -3,6 +3,7 @@ var _error_types_8h =
     [ "ERROR_CODE", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28c", [
       [ "ERROR_OK", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28caadeb5032c03491611646c1c64f7c0e0c", null ],
       [ "ERROR_UNKNOWN", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28ca2c8108ceb9a85cecbbe3af50dbc1cf8c", null ],
+      [ "ERROR_LAUNCH", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28caab5378f9997697f95e7d273165241b0b", null ],
       [ "ERROR_POWERED_OFF", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28cad15dfe854b0141a245bd0983c5421305", null ],
       [ "ERROR_POWERED_ON", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28ca237d77aa10791ffeba791b0cc3c44019", null ],
       [ "ERROR_RUNNING", "_error_types_8h.html#a4db9ee29f2ff83c71567c12f6bfbf28cadc7fcc7400d3490d5bd58a225c210434", null ],

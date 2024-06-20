@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/CRTFile.h Source File</title>
+<title>VirtualC64: CRTFile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -159,7 +159,7 @@ $(function(){initNavTree('_c_r_t_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> cartridgeTypeName(CartridgeType type);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;path);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
@@ -167,7 +167,7 @@ $(function(){initNavTree('_c_r_t_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Initializing</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    CRTFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    CRTFile(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    CRTFile(<span class="keyword">const</span> u8 *buf, isize len) <span class="keywordflow">throws</span> { init(buf, len); }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
@@ -182,7 +182,7 @@ $(function(){initNavTree('_c_r_t_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Methods from AnyFile</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> FILETYPE_CRT; }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    PETName&lt;16&gt; getName() <span class="keyword">const override</span>;</div>

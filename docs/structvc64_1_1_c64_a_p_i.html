@@ -161,9 +161,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeInspectionTarge
 <tr class="memdesc:a0d34910ddc5f264d7fad79986a204645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a snapshot into the emulator.  <br /></td></tr>
 <tr class="separator:a0d34910ddc5f264d7fad79986a204645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Handling ROMs</div></td></tr>
-<tr class="memitem:a88b7d46e1b2516a233d8a28aae34c616" id="r_a88b7d46e1b2516a233d8a28aae34c616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88b7d46e1b2516a233d8a28aae34c616">loadRom</a> (const string &amp;path)</td></tr>
-<tr class="memdesc:a88b7d46e1b2516a233d8a28aae34c616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a ROM from a file The ROM type is determined automatically.  <br /></td></tr>
-<tr class="separator:a88b7d46e1b2516a233d8a28aae34c616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2536bf397b5d4a7c9759bccd495c21c" id="r_ac2536bf397b5d4a7c9759bccd495c21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2536bf397b5d4a7c9759bccd495c21c">loadRom</a> (const fs::path &amp;path)</td></tr>
+<tr class="memdesc:ac2536bf397b5d4a7c9759bccd495c21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a ROM from a file The ROM type is determined automatically.  <br /></td></tr>
+<tr class="separator:ac2536bf397b5d4a7c9759bccd495c21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76f46bc2d78c9e7dac1b63b452b4b5a1" id="r_a76f46bc2d78c9e7dac1b63b452b4b5a1"><td class="memItemLeft" align="right" valign="top"><a id="a76f46bc2d78c9e7dac1b63b452b4b5a1" name="a76f46bc2d78c9e7dac1b63b452b4b5a1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadRom</b> (const MediaFile &amp;file)</td></tr>
 <tr class="memdesc:a76f46bc2d78c9e7dac1b63b452b4b5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a ROM, provided by a RomFile object. <br /></td></tr>
@@ -172,9 +172,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadRom</b> (const Me
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteRom</b> (RomType type)</td></tr>
 <tr class="memdesc:ab96023d7207f5bd6767ac6037b908164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an installed ROM The ROM contents is overwritten with zeroes. <br /></td></tr>
 <tr class="separator:ab96023d7207f5bd6767ac6037b908164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe1de0fc85ef1807c8a773754e248e30" id="r_abe1de0fc85ef1807c8a773754e248e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe1de0fc85ef1807c8a773754e248e30">saveRom</a> (RomType rom, const string &amp;path)</td></tr>
-<tr class="memdesc:abe1de0fc85ef1807c8a773754e248e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a ROM to disk.  <br /></td></tr>
-<tr class="separator:abe1de0fc85ef1807c8a773754e248e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ad9406bbb884fd13050cfb6e01f7ae" id="r_a59ad9406bbb884fd13050cfb6e01f7ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59ad9406bbb884fd13050cfb6e01f7ae">saveRom</a> (RomType rom, const std::filesystem::path &amp;path)</td></tr>
+<tr class="memdesc:a59ad9406bbb884fd13050cfb6e01f7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a ROM to disk.  <br /></td></tr>
+<tr class="separator:a59ad9406bbb884fd13050cfb6e01f7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Handling media files</div></td></tr>
 <tr class="memitem:ae027739c668a89a1f0332f16853fc4d3" id="r_ae027739c668a89a1f0332f16853fc4d3"><td class="memItemLeft" align="right" valign="top"><a id="ae027739c668a89a1f0332f16853fc4d3" name="ae027739c668a89a1f0332f16853fc4d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const MediaFile &amp;file)</td></tr>
@@ -283,8 +283,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const File
 
 </div>
 </div>
-<a id="a88b7d46e1b2516a233d8a28aae34c616" name="a88b7d46e1b2516a233d8a28aae34c616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88b7d46e1b2516a233d8a28aae34c616">&#9670;&#160;</a></span>loadRom()</h2>
+<a id="ac2536bf397b5d4a7c9759bccd495c21c" name="ac2536bf397b5d4a7c9759bccd495c21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2536bf397b5d4a7c9759bccd495c21c">&#9670;&#160;</a></span>loadRom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +292,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const File
         <tr>
           <td class="memname">void loadRom </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -333,8 +333,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const File
 
 </div>
 </div>
-<a id="abe1de0fc85ef1807c8a773754e248e30" name="abe1de0fc85ef1807c8a773754e248e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe1de0fc85ef1807c8a773754e248e30">&#9670;&#160;</a></span>saveRom()</h2>
+<a id="a59ad9406bbb884fd13050cfb6e01f7ae" name="a59ad9406bbb884fd13050cfb6e01f7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ad9406bbb884fd13050cfb6e01f7ae">&#9670;&#160;</a></span>saveRom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +347,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const File
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+          <td class="paramtype">const std::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -404,8 +404,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flash</b> (const File
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<b>VirtualC64.cpp</b></li>
+<li><a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
+<li><b>VirtualC64.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

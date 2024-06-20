@@ -120,6 +120,12 @@ $(function(){initNavTree('structvc64_1_1_keyboard_a_p_i.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a835d44cc8349db5c928202b085edda4e" id="r_a835d44cc8349db5c928202b085edda4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835d44cc8349db5c928202b085edda4e">press</a> (<a class="el" href="structvc64_1_1_c64_key.html">C64Key</a> key, double delay=0.0) const</td></tr>
+<tr class="memdesc:a835d44cc8349db5c928202b085edda4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presses a key.  <br /></td></tr>
+<tr class="separator:a835d44cc8349db5c928202b085edda4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397fb75135556e1a6324099677b9da93" id="r_a397fb75135556e1a6324099677b9da93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a397fb75135556e1a6324099677b9da93">release</a> (<a class="el" href="structvc64_1_1_c64_key.html">C64Key</a> key, double delay=0.0) const</td></tr>
+<tr class="memdesc:a397fb75135556e1a6324099677b9da93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a key.  <br /></td></tr>
+<tr class="separator:a397fb75135556e1a6324099677b9da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748b0e5d8c1c7b4d2bb104dbb5ec22b4" id="r_a748b0e5d8c1c7b4d2bb104dbb5ec22b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a748b0e5d8c1c7b4d2bb104dbb5ec22b4">isPressed</a> (<a class="el" href="structvc64_1_1_c64_key.html">C64Key</a> key) const</td></tr>
 <tr class="memdesc:a748b0e5d8c1c7b4d2bb104dbb5ec22b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a key is currently pressed.  <br /></td></tr>
 <tr class="separator:a748b0e5d8c1c7b4d2bb104dbb5ec22b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,9 +190,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>abortAutoTyping</b> (
 
 </div>
 </div>
+<a id="a835d44cc8349db5c928202b085edda4e" name="a835d44cc8349db5c928202b085edda4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835d44cc8349db5c928202b085edda4e">&#9670;&#160;</a></span>press()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void press </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvc64_1_1_c64_key.html">C64Key</a></td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delay</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Presses a key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to press. </td></tr>
+    <tr><td class="paramname">delay</td><td>An optional delay in seconds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If no delay is specified, the function will immediately modify the C64's keyboard matrix. Otherwise, it will ask the event scheduler to modify the matrix with the specified delay.</p>
+<dl class="section note"><dt>Note</dt><dd>If you wish to press multiple keys, make sure to let some time pass between two key presses. You need to give the C64 time to scan the keyboard matrix before another key can be pressed. </dd></dl>
+
+</div>
+</div>
+<a id="a397fb75135556e1a6324099677b9da93" name="a397fb75135556e1a6324099677b9da93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397fb75135556e1a6324099677b9da93">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void release </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvc64_1_1_c64_key.html">C64Key</a></td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delay</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases a key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to release. </td></tr>
+    <tr><td class="paramname">delay</td><td>An optional delay in seconds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If no delay is specified, the function will immediately modify the C64's keyboard matrix. Otherwise, it will ask the event scheduler to modify the matrix with the specified delay. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<b>VirtualC64.cpp</b></li>
+<li><a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
+<li><b>VirtualC64.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

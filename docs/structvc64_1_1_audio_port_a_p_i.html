@@ -125,15 +125,15 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
 <tr class="memdesc:a76658a4234f9adfa04b6190f14775865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns statistical information about the components. <br /></td></tr>
 <tr class="separator:a76658a4234f9adfa04b6190f14775865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Retrieving audio data</div></td></tr>
-<tr class="memitem:a657c4e244c04d7618366b6570b24cd8b" id="r_a657c4e244c04d7618366b6570b24cd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a657c4e244c04d7618366b6570b24cd8b">copyMono</a> (float *buffer, isize n)</td></tr>
-<tr class="memdesc:a657c4e244c04d7618366b6570b24cd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of mono samples from the audio buffer Internally, the audio port maintains a ringbuffer storing stereo audio samples.  <br /></td></tr>
-<tr class="separator:a657c4e244c04d7618366b6570b24cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9ac7ec0e836d8875918d0fb37ebb105" id="r_ac9ac7ec0e836d8875918d0fb37ebb105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9ac7ec0e836d8875918d0fb37ebb105">copyStereo</a> (float *left, float *right, isize n)</td></tr>
-<tr class="memdesc:ac9ac7ec0e836d8875918d0fb37ebb105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of stereo samples from the audio buffer.  <br /></td></tr>
-<tr class="separator:ac9ac7ec0e836d8875918d0fb37ebb105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c0ab30b90b79c28d5eff7592d794780" id="r_a5c0ab30b90b79c28d5eff7592d794780"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c0ab30b90b79c28d5eff7592d794780">copyInterleaved</a> (float *buffer, isize n)</td></tr>
-<tr class="memdesc:a5c0ab30b90b79c28d5eff7592d794780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of stereo samples from the audio buffer.  <br /></td></tr>
-<tr class="separator:a5c0ab30b90b79c28d5eff7592d794780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545993edd9378d8ca304cdcc265121ee" id="r_a545993edd9378d8ca304cdcc265121ee"><td class="memItemLeft" align="right" valign="top">isize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a545993edd9378d8ca304cdcc265121ee">copyMono</a> (float *buffer, isize n)</td></tr>
+<tr class="memdesc:a545993edd9378d8ca304cdcc265121ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of mono samples from the audio buffer Internally, the audio port maintains a ringbuffer storing stereo audio samples.  <br /></td></tr>
+<tr class="separator:a545993edd9378d8ca304cdcc265121ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f5b6837eb52bf3064a83c96447386b" id="r_a62f5b6837eb52bf3064a83c96447386b"><td class="memItemLeft" align="right" valign="top">isize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f5b6837eb52bf3064a83c96447386b">copyStereo</a> (float *left, float *right, isize n)</td></tr>
+<tr class="memdesc:a62f5b6837eb52bf3064a83c96447386b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of stereo samples from the audio buffer.  <br /></td></tr>
+<tr class="separator:a62f5b6837eb52bf3064a83c96447386b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c324bee6a7c043b61c8b960d3ef19a2" id="r_a8c324bee6a7c043b61c8b960d3ef19a2"><td class="memItemLeft" align="right" valign="top">isize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c324bee6a7c043b61c8b960d3ef19a2">copyInterleaved</a> (float *buffer, isize n)</td></tr>
+<tr class="memdesc:a8c324bee6a7c043b61c8b960d3ef19a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a number of stereo samples from the audio buffer.  <br /></td></tr>
+<tr class="separator:a8c324bee6a7c043b61c8b960d3ef19a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Visualizing waveforms</div></td></tr>
 <tr class="memitem:ae89a8b9a5a6e091b22b11f720bf1c987" id="r_ae89a8b9a5a6e091b22b11f720bf1c987"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89a8b9a5a6e091b22b11f720bf1c987">draw</a> (u32 *buffer, isize width, isize height, float maxAmp, u32 color, isize sid=-1) const</td></tr>
 <tr class="memdesc:ae89a8b9a5a6e091b22b11f720bf1c987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a visual representation of the waveform.  <br /></td></tr>
@@ -142,14 +142,14 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Audio Port Public API. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5c0ab30b90b79c28d5eff7592d794780" name="a5c0ab30b90b79c28d5eff7592d794780"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c0ab30b90b79c28d5eff7592d794780">&#9670;&#160;</a></span>copyInterleaved()</h2>
+<a id="a8c324bee6a7c043b61c8b960d3ef19a2" name="a8c324bee6a7c043b61c8b960d3ef19a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c324bee6a7c043b61c8b960d3ef19a2">&#9670;&#160;</a></span>copyInterleaved()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void copyInterleaved </td>
+          <td class="memname">isize copyInterleaved </td>
           <td>(</td>
           <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
         </tr>
@@ -169,17 +169,18 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of actually copied sound sound samples. </dd></dl>
 
 </div>
 </div>
-<a id="a657c4e244c04d7618366b6570b24cd8b" name="a657c4e244c04d7618366b6570b24cd8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a657c4e244c04d7618366b6570b24cd8b">&#9670;&#160;</a></span>copyMono()</h2>
+<a id="a545993edd9378d8ca304cdcc265121ee" name="a545993edd9378d8ca304cdcc265121ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545993edd9378d8ca304cdcc265121ee">&#9670;&#160;</a></span>copyMono()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void copyMono </td>
+          <td class="memname">isize copyMono </td>
           <td>(</td>
           <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
         </tr>
@@ -199,17 +200,18 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of actually copied sound sound samples. </dd></dl>
 
 </div>
 </div>
-<a id="ac9ac7ec0e836d8875918d0fb37ebb105" name="ac9ac7ec0e836d8875918d0fb37ebb105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ac7ec0e836d8875918d0fb37ebb105">&#9670;&#160;</a></span>copyStereo()</h2>
+<a id="a62f5b6837eb52bf3064a83c96447386b" name="a62f5b6837eb52bf3064a83c96447386b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f5b6837eb52bf3064a83c96447386b">&#9670;&#160;</a></span>copyStereo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void copyStereo </td>
+          <td class="memname">isize copyStereo </td>
           <td>(</td>
           <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>left</em>, </span></td>
         </tr>
@@ -235,6 +237,7 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of actually copied sound sound samples. </dd></dl>
 
 </div>
 </div>
@@ -283,8 +286,8 @@ AudioPortStats&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
-<li>/Users/hoff/Retro/virtualc64/Emulator/<b>VirtualC64.cpp</b></li>
+<li><a class="el" href="_virtual_c64_8h_source.html">VirtualC64.h</a></li>
+<li><b>VirtualC64.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

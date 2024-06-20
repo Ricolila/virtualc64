@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/FileSystems/FileSystem.h Source File</title>
+<title>VirtualC64: FileSystem.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -167,7 +167,7 @@ $(function(){initNavTree('_file_system_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    FileSystem(<span class="keyword">class</span> Disk &amp;disk) <span class="keywordflow">throws</span> { init(disk); }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    FileSystem(AnyCollection &amp;collection) <span class="keywordflow">throws</span> { init(collection); }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    FileSystem(MediaFile &amp;file) <span class="keywordflow">throws</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    FileSystem(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    FileSystem(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ~FileSystem();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
@@ -179,7 +179,7 @@ $(function(){initNavTree('_file_system_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> init(<span class="keyword">class</span> Disk &amp;disk) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> init(AnyCollection &amp;collection) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> init(MediaFile &amp;file) <span class="keywordflow">throws</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">public</span>:</div>
@@ -345,15 +345,15 @@ $(function(){initNavTree('_file_system_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// Writing files</span></div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="comment">// Returns the next free directory entry or creates one</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    FSDirEntry *getOrCreateNextFreeDirEntry();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="comment">// Creates a new file</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordtype">bool</span> makeFile(PETName&lt;16&gt; name, <span class="keyword">const</span> u8 *buf, isize cnt);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="comment">// Creates a new file</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">bool</span> makeFile(PETName&lt;16&gt; name, <span class="keyword">const</span> u8 *buf, isize cnt);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordtype">bool</span> makeFile(PETName&lt;16&gt; name, FSDirEntry *entry, <span class="keyword">const</span> u8 *buf, isize cnt);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordtype">bool</span> makeFile(PETName&lt;16&gt; name, FSDirEntry *entry, <span class="keyword">const</span> u8 *buf, isize cnt);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// Returns the next free directory entry or creates one</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    FSDirEntry *getOrCreateNextFreeDirEntry();</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    </div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="comment">//</span></div>
@@ -406,7 +406,7 @@ $(function(){initNavTree('_file_system_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordtype">bool</span> importVolume(<span class="keyword">const</span> u8 *src, isize size, ErrorCode *err);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    </div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="comment">// Imports a folder from the host file system</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordtype">void</span> importDirectory(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordtype">void</span> importDirectory(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordtype">void</span> importDirectory(<span class="keyword">const</span> fs::directory_entry &amp;dir) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="comment">// Exports the volume to a buffer</span></div>
@@ -417,8 +417,8 @@ $(function(){initNavTree('_file_system_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordtype">bool</span> exportBlocks(isize first, isize last, u8 *dst, isize size, ErrorCode *err = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="comment">// Exports all files or a single file to a folder in the host file system</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">void</span> exportDirectory(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path, <span class="keywordtype">bool</span> createDir = <span class="keyword">true</span>) throws;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordtype">void</span> exportFile(FSDirEntry *item, const <span class="keywordtype">string</span> &amp;path) throws;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">void</span> exportDirectory(<span class="keyword">const</span> fs::path &amp;path, <span class="keywordtype">bool</span> createDir = <span class="keyword">true</span>) throws;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordtype">void</span> exportFile(FSDirEntry *item, const fs::path &amp;path) throws;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordtype">void</span> exportFile(FSDirEntry *entry, std::ofstream &amp;stream) throws;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>

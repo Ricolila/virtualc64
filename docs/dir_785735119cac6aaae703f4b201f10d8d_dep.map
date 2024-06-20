@@ -1,4 +1,4 @@
-<map id="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Drive" name="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Drive">
+<map id="Drive" name="Drive">
 <area shape="rect" id="node1" href="dir_785735119cac6aaae703f4b201f10d8d.html" title="Drive" alt="" coords="145,52,197,78"/>
 <area shape="rect" id="node2" href="dir_899058ae01f0eb85e2d1a53e03af8bff.html" title="FileSystems" alt="" coords="5,126,100,152"/>
 <area shape="poly" id="edge1" href="dir_000008_000010.html" alt="" coords="152,81,87,120,84,115,150,76"/>

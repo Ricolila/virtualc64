@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/D64File.h Source File</title>
+<title>VirtualC64: D64File.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -148,7 +148,7 @@ $(function(){initNavTree('_d64_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// Error information stored in the D64 archive</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    u8 errors[802];</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;name);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -158,7 +158,7 @@ $(function(){initNavTree('_d64_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    D64File();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    D64File(isize tracks, <span class="keywordtype">bool</span> ecc);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    D64File(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) throws : D64File() { init(path); }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    D64File(<span class="keyword">const</span> fs::path &amp;path) throws : D64File() { init(path); }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    D64File(<span class="keyword">const</span> u8 *buf, isize len) throws : D64File() { init(buf, len); }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    D64File(<span class="keyword">class</span> FileSystem &amp;fs) throws : D64File() { init(fs); }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    </div>
@@ -182,7 +182,7 @@ $(function(){initNavTree('_d64_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Methods from AnyFile</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> FILETYPE_D64; }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    PETName&lt;16&gt; getName() <span class="keyword">const override</span>;</div>

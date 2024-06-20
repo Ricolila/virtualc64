@@ -8,6 +8,7 @@ var dir_9110424d8d329f8b6a25ed0145171490 =
     [ "CoreComponent.h", "_core_component_8h_source.html", null ],
     [ "CoreObject.h", "_core_object_8h_source.html", null ],
     [ "Defaults.h", "_defaults_8h_source.html", null ],
+    [ "Dumpable.h", "_dumpable_8h_source.html", null ],
     [ "Error.h", "_error_8h.html", "_error_8h" ],
     [ "ErrorTypes.h", "_error_types_8h.html", "_error_types_8h" ],
     [ "Host.h", "_host_8h_source.html", null ],

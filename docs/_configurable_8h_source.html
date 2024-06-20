@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Base/Configurable.h Source File</title>
+<title>VirtualC64: Configurable.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -168,15 +168,15 @@ $(function(){initNavTree('_configurable_8h_source.html',''); initResizable(); })
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> setOption(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;opt, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;value);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Resets all config options</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> resetConfig(<span class="keyword">const</span> Defaults &amp;defaults);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> resetConfig(<span class="keyword">const</span> Defaults &amp;defaults, isize i);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Dumps the current configuration</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> dumpConfig(std::ostream&amp; os) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Returns a textual description for all available options</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">string</span> keyList() { <span class="keywordflow">return</span> OptionEnum::keyList([&amp;](Option i) { <span class="keywordflow">return</span> isValidOption(i); }); }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">string</span> argList() { <span class="keywordflow">return</span> OptionEnum::argList([&amp;](Option i) { <span class="keywordflow">return</span> isValidOption(i); }); }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> resetConfig(<span class="keyword">const</span> Defaults &amp;defaults, isize objid = 0);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Dumps the current configuration</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> dumpConfig(std::ostream&amp; os) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Returns a textual description for all available options</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">string</span> keyList() { <span class="keywordflow">return</span> OptionEnum::keyList([&amp;](Option i) { <span class="keywordflow">return</span> isValidOption(i); }); }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">string</span> argList() { <span class="keywordflow">return</span> OptionEnum::argList([&amp;](Option i) { <span class="keywordflow">return</span> isValidOption(i); }); }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>

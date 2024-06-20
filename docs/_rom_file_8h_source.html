@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/RomFile.h Source File</title>
+<title>VirtualC64: RomFile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -152,7 +152,7 @@ $(function(){initNavTree('_rom_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// Class methods</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;name);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isRomStream(RomType type, std::istream &amp;stream);</div>
@@ -161,11 +161,11 @@ $(function(){initNavTree('_rom_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isKernalRomStream(std::istream &amp;stream);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isVC1541RomStream(std::istream &amp;stream);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isRomFile(RomType type, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isBasicRomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCharRomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isKernalRomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isVC1541RomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isRomFile(RomType type, <span class="keyword">const</span> fs::path &amp;path);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isBasicRomFile(<span class="keyword">const</span> fs::path &amp;path);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCharRomFile(<span class="keyword">const</span> fs::path &amp;path);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isKernalRomFile(<span class="keyword">const</span> fs::path &amp;path);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isVC1541RomFile(<span class="keyword">const</span> fs::path &amp;path);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isRomBuffer(RomType type, <span class="keyword">const</span> u8 *buf, isize len);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isBasicRomBuffer(<span class="keyword">const</span> u8 *buf, isize len);</div>
@@ -178,8 +178,8 @@ $(function(){initNavTree('_rom_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Initializing</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    RomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    RomFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path, std::istream &amp;stream) <span class="keywordflow">throws</span> { init(path, stream); }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    RomFile(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    RomFile(<span class="keyword">const</span> fs::path &amp;path, std::istream &amp;stream) <span class="keywordflow">throws</span> { init(path, stream); }</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    RomFile(<span class="keyword">const</span> u8 *buf, isize len) <span class="keywordflow">throws</span> { init(buf, len); }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
@@ -194,7 +194,7 @@ $(function(){initNavTree('_rom_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Methods from AnyFile</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> romFileType; }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> finalizeRead() <span class="keyword">override</span>;</div>

@@ -11,5 +11,6 @@ var searchData=
   ['state_5foff_8',['STATE_OFF',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a4038ca872e1ed104c16122c365bd3ca0',1,'vc64']]],
   ['state_5fpaused_9',['STATE_PAUSED',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a6291ce9aab12208cc66968c97a1ce7dd',1,'vc64']]],
   ['state_5frunning_10',['STATE_RUNNING',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700addfe11c6d06c4e27bd6efc18cc4862a6',1,'vc64']]],
-  ['state_5fsuspended_11',['STATE_SUSPENDED',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a9acde879501201b19fcb37cdd08eff6d',1,'vc64']]]
+  ['state_5fsuspended_11',['STATE_SUSPENDED',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a9acde879501201b19fcb37cdd08eff6d',1,'vc64']]],
+  ['state_5funinit_12',['STATE_UNINIT',['../namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a0075eeb0f3377fa2dad84d3656ab8c6d',1,'vc64']]]
 ];

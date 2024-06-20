@@ -228,7 +228,7 @@ $(function(){initNavTree('md_pages_2headless.html',''); initResizable(); });
 <div class="line">    opterr = 0;</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Remember the execution path</span></div>
-<div class="line">    keys[<span class="stringliteral">&quot;exec&quot;</span>] = util::makeAbsolutePath(argv[0]);</div>
+<div class="line">    keys[<span class="stringliteral">&quot;exec&quot;</span>] = fs::absolute(argv[0]);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Parse all options</span></div>
 <div class="line">    <span class="keywordflow">while</span> (1) {</div>
@@ -263,7 +263,7 @@ $(function(){initNavTree('md_pages_2headless.html',''); initResizable(); });
 <div class="line">    <span class="comment">// Parse all remaining arguments</span></div>
 <div class="line">    <span class="keyword">auto</span> nr = 1;</div>
 <div class="line">    <span class="keywordflow">while</span> (optind &lt; argc) {</div>
-<div class="line">        keys[<span class="stringliteral">&quot;arg&quot;</span> + std::to_string(nr++)] = util::makeAbsolutePath(argv[optind++]);</div>
+<div class="line">        keys[<span class="stringliteral">&quot;arg&quot;</span> + std::to_string(nr++)] = fs::absolute(fs::path(argv[optind++])).string();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Check for syntax errors</span></div>
@@ -359,10 +359,10 @@ $(function(){initNavTree('md_pages_2headless.html',''); initResizable(); });
 <div class="ttc" id="anamespacevc64_html_acbbd5f70828660265bd996e23b58ce0baa4d10009296b03ca20e5e0782de8bcbd"><div class="ttname"><a href="namespacevc64.html#acbbd5f70828660265bd996e23b58ce0baa4d10009296b03ca20e5e0782de8bcbd">vc64::MSG_SCRIPT_DONE</a></div><div class="ttdeci">@ MSG_SCRIPT_DONE</div><div class="ttdoc">A RetroShell script has been successfully executed.</div><div class="ttdef"><b>Definition</b> MsgQueueTypes.h:46</div></div>
 <div class="ttc" id="anamespacevc64_html_acbbd5f70828660265bd996e23b58ce0bab5a09c07a9ce6862250f18e81ed80d3f"><div class="ttname"><a href="namespacevc64.html#acbbd5f70828660265bd996e23b58ce0bab5a09c07a9ce6862250f18e81ed80d3f">vc64::MSG_ABORT</a></div><div class="ttdeci">@ MSG_ABORT</div><div class="ttdoc">The emulator requests the GUI to quit the app.</div><div class="ttdef"><b>Definition</b> MsgQueueTypes.h:37</div></div>
 <div class="ttc" id="anamespacevc64_html_acbbd5f70828660265bd996e23b58ce0bacfb923a604b38a3581f9df2e17f31a86"><div class="ttname"><a href="namespacevc64.html#acbbd5f70828660265bd996e23b58ce0bacfb923a604b38a3581f9df2e17f31a86">vc64::MSG_SCRIPT_ABORT</a></div><div class="ttdeci">@ MSG_SCRIPT_ABORT</div><div class="ttdoc">The execution of a RetroShell ccript has been aborted.</div><div class="ttdef"><b>Definition</b> MsgQueueTypes.h:47</div></div>
-<div class="ttc" id="astructvc64_1_1_error_html"><div class="ttname"><a href="structvc64_1_1_error.html">vc64::Error</a></div><div class="ttdoc">Emulator exception.</div><div class="ttdef"><b>Definition</b> Error.h:23</div></div>
-<div class="ttc" id="astructvc64_1_1_error_html_a14f6939a7c1cf873da6fbfee09f1e311"><div class="ttname"><a href="structvc64_1_1_error.html#a14f6939a7c1cf873da6fbfee09f1e311">vc64::Error::what</a></div><div class="ttdeci">const char * what() const override</div><div class="ttdoc">Returns a textual description of this error.</div><div class="ttdef"><b>Definition</b> Error.cpp:255</div></div>
-<div class="ttc" id="astructvc64_1_1_retro_shell_a_p_i_html_a7369f301fe922693d0d52347a576b4d5"><div class="ttname"><a href="structvc64_1_1_retro_shell_a_p_i.html#a7369f301fe922693d0d52347a576b4d5">vc64::RetroShellAPI::setStream</a></div><div class="ttdeci">void setStream(std::ostream &amp;os)</div><div class="ttdoc">Assign an additional output stream.</div><div class="ttdef"><b>Definition</b> VirtualC64.cpp:1005</div></div>
-<div class="ttc" id="astructvc64_1_1_retro_shell_a_p_i_html_adae752381f75b1979d627f4ff161f934"><div class="ttname"><a href="structvc64_1_1_retro_shell_a_p_i.html#adae752381f75b1979d627f4ff161f934">vc64::RetroShellAPI::execScript</a></div><div class="ttdeci">void execScript(std::stringstream &amp;ss)</div><div class="ttdoc">Executes a script.</div><div class="ttdef"><b>Definition</b> VirtualC64.cpp:981</div></div>
+<div class="ttc" id="astructvc64_1_1_error_html"><div class="ttname"><a href="structvc64_1_1_error.html">vc64::Error</a></div><div class="ttdoc">Emulator exception.</div><div class="ttdef"><b>Definition</b> Error.h:24</div></div>
+<div class="ttc" id="astructvc64_1_1_error_html_a14f6939a7c1cf873da6fbfee09f1e311"><div class="ttname"><a href="structvc64_1_1_error.html#a14f6939a7c1cf873da6fbfee09f1e311">vc64::Error::what</a></div><div class="ttdeci">const char * what() const override</div><div class="ttdoc">Returns a textual description of this error.</div><div class="ttdef"><b>Definition</b> Error.cpp:259</div></div>
+<div class="ttc" id="astructvc64_1_1_retro_shell_a_p_i_html_a7369f301fe922693d0d52347a576b4d5"><div class="ttname"><a href="structvc64_1_1_retro_shell_a_p_i.html#a7369f301fe922693d0d52347a576b4d5">vc64::RetroShellAPI::setStream</a></div><div class="ttdeci">void setStream(std::ostream &amp;os)</div><div class="ttdoc">Assign an additional output stream.</div><div class="ttdef"><b>Definition</b> VirtualC64.cpp:1018</div></div>
+<div class="ttc" id="astructvc64_1_1_retro_shell_a_p_i_html_adae752381f75b1979d627f4ff161f934"><div class="ttname"><a href="structvc64_1_1_retro_shell_a_p_i.html#adae752381f75b1979d627f4ff161f934">vc64::RetroShellAPI::execScript</a></div><div class="ttdeci">void execScript(std::stringstream &amp;ss)</div><div class="ttdoc">Executes a script.</div><div class="ttdef"><b>Definition</b> VirtualC64.cpp:994</div></div>
 </div><!-- fragment --><div class="section_buttons"></div><div class="section_buttons"><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Previous   </th><th class="markdownTableHeadRight">Next    </th></tr>

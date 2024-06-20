@@ -1,4 +1,4 @@
-<map id="/Users/hoff/Retro/virtualc64/Emulator/Components/Ports" name="/Users/hoff/Retro/virtualc64/Emulator/Components/Ports">
+<map id="Ports" name="Ports">
 <area shape="rect" id="node1" href="dir_c6eb1b6be04fd607e5126bbfa479e02a.html" title="SID" alt="" coords="51,126,96,152"/>
 <area shape="rect" id="node2" href="dir_ff1638999cfee165ecdeb3e16052ca2e.html" title="Ports" alt="" coords="47,52,100,78"/>
 <area shape="poly" id="edge2" href="dir_000022_000027.html" alt="" coords="76,78,76,110,71,110,71,78"/>

@@ -1,4 +1,4 @@
-<map id="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Paddle" name="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Paddle">
+<map id="Paddle" name="Paddle">
 <area shape="rect" id="node1" href="dir_8b75e2c966dbd6e9d814cce494bf41c3.html" title="Joystick" alt="" coords="26,126,97,152"/>
 <area shape="rect" id="node2" href="dir_9068981ac05c97c919bc9e7910fe0c7d.html" title="Paddle" alt="" coords="32,52,93,78"/>
 <area shape="poly" id="edge1" href="dir_000018_000011.html" alt="" coords="65,78,65,110,59,110,60,78"/>

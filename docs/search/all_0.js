@@ -4,7 +4,7 @@ var searchData=
   ['also_1',['See also',['../index.html#autotoc_md1',1,'']]],
   ['app_2',['Headless App',['../md_pages_2headless.html',1,'']]],
   ['aspect_5fratio_3',['ASPECT_RATIO',['../namespacevc64_1_1_p_a_l.html#a30b804c583bbe3c7a6a1863cc9b15561',1,'vc64::PAL::ASPECT_RATIO'],['../namespacevc64_1_1_n_t_s_c.html#a30b804c583bbe3c7a6a1863cc9b15561',1,'vc64::NTSC::ASPECT_RATIO']]],
-  ['attachcartridge_4',['attachCartridge',['../structvc64_1_1_expansion_port_a_p_i.html#ae3992e6967645b8bf47b53d7012abf00',1,'vc64::ExpansionPortAPI::attachCartridge(const string &amp;path, bool reset=true)'],['../structvc64_1_1_expansion_port_a_p_i.html#acf5bc139239eea75eb3d4c976d4e753a',1,'vc64::ExpansionPortAPI::attachCartridge(const MediaFile &amp;c, bool reset=true)']]],
+  ['attachcartridge_4',['attachCartridge',['../structvc64_1_1_expansion_port_a_p_i.html#aaca5f5a398aea248934f52f4cee5a8f9',1,'vc64::ExpansionPortAPI::attachCartridge(const std::filesystem::path &amp;path, bool reset=true)'],['../structvc64_1_1_expansion_port_a_p_i.html#acf5bc139239eea75eb3d4c976d4e753a',1,'vc64::ExpansionPortAPI::attachCartridge(const MediaFile &amp;c, bool reset=true)']]],
   ['attachgeoram_5',['attachGeoRam',['../structvc64_1_1_expansion_port_a_p_i.html#aff022858efad6a978d70268e69e51b84',1,'vc64::ExpansionPortAPI']]],
   ['attachisepiccartridge_6',['attachIsepicCartridge',['../structvc64_1_1_expansion_port_a_p_i.html#a526b5082083e996e3be0499a6b1f16d2',1,'vc64::ExpansionPortAPI']]],
   ['attachreu_7',['attachReu',['../structvc64_1_1_expansion_port_a_p_i.html#a26a6e95ec5959111e54a0266837694ba',1,'vc64::ExpansionPortAPI']]],

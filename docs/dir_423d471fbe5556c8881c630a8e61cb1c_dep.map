@@ -1,4 +1,4 @@
-<map id="/Users/hoff/Retro/virtualc64/Emulator/Components/CPU" name="/Users/hoff/Retro/virtualc64/Emulator/Components/CPU">
+<map id="CPU" name="CPU">
 <area shape="rect" id="node3" href="dir_9110424d8d329f8b6a25ed0145171490.html" title="Base" alt="" coords="37,137,88,162"/>
 <area shape="poly" id="edge1" href="dir_000004_000000.html" alt="" coords="65,88,65,121,60,121,60,88"/>
 <area shape="rect" id="edge1-headlabel" href="dir_000004_000000.html" title="1" alt="" coords="68,111,75,126"/>

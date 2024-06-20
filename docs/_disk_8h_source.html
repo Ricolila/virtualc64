@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Peripherals/Drive/Disk.h Source File</title>
+<title>VirtualC64: Disk.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -140,7 +140,7 @@ $(function(){initNavTree('_disk_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span>DiskAnalyzer;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span>FileSystem;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">class </span>Disk final : <span class="keyword">public</span> CoreObject, <span class="keyword">public</span> Dumpable {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">class </span>Disk final : <span class="keyword">public</span> CoreObject {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">friend</span> <span class="keyword">class </span>Drive;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
@@ -227,7 +227,7 @@ $(function(){initNavTree('_disk_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    Disk();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    Disk(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path, <span class="keywordtype">bool</span> wp = <span class="keyword">false</span>) throws { init(path, wp); }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    Disk(<span class="keyword">const</span> fs::path &amp;path, <span class="keywordtype">bool</span> wp = <span class="keyword">false</span>) throws { init(path, wp); }</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    Disk(DOSType type, PETName&lt;16&gt; name, <span class="keywordtype">bool</span> wp = <span class="keyword">false</span>) { init(type, name, wp); }</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    Disk(<span class="keyword">const</span> FileSystem &amp;device, <span class="keywordtype">bool</span> wp = <span class="keyword">false</span>) { init(device, wp); }</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    Disk(<span class="keyword">const</span> <span class="keyword">class</span> G64File &amp;g64, <span class="keywordtype">bool</span> wp = <span class="keyword">false</span>) { init(g64, wp); }</div>
@@ -237,7 +237,7 @@ $(function(){initNavTree('_disk_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path, <span class="keywordtype">bool</span> wp) <span class="keywordflow">throws</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> fs::path &amp;path, <span class="keywordtype">bool</span> wp) <span class="keywordflow">throws</span>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">void</span> init(DOSType type, PETName&lt;16&gt; name, <span class="keywordtype">bool</span> wp);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keyword">class</span> FileSystem &amp;device, <span class="keywordtype">bool</span> wp);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keyword">class</span> G64File &amp;g64, <span class="keywordtype">bool</span> wp);</div>

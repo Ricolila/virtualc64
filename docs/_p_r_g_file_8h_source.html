@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/PRGFile.h Source File</title>
+<title>VirtualC64: PRGFile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -140,7 +140,7 @@ $(function(){initNavTree('_p_r_g_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Class methods</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;path);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('_p_r_g_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    PRGFile() : AnyCollection() { }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    PRGFile(isize capacity) : AnyCollection(capacity) { }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    PRGFile(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    PRGFile(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    PRGFile(<span class="keyword">const</span> u8 *buf, isize len) <span class="keywordflow">throws</span> { init(buf, len); }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    PRGFile(<span class="keyword">class</span> FileSystem &amp;fs) <span class="keywordflow">throws</span> { init(fs); }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
@@ -171,7 +171,7 @@ $(function(){initNavTree('_p_r_g_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Methods from AnyFile</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> FILETYPE_PRG; }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    </div>

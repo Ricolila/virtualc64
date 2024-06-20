@@ -1,7 +1,8 @@
 var _emulator_types_8h =
 [
-    [ "EmulatorConfig", "structvc64_1_1_emulator_config.html", "structvc64_1_1_emulator_config" ],
-    [ "EmulatorInfo", "structvc64_1_1_emulator_info.html", null ],
+    [ "EmulatorConfig", "structvc64_1_1_emulator_config.html", null ],
+    [ "EmulatorInfo", "structvc64_1_1_emulator_info.html", "structvc64_1_1_emulator_info" ],
+    [ "EmulatorStats", "structvc64_1_1_emulator_stats.html", "structvc64_1_1_emulator_stats" ],
     [ "DEBUG_FLAG", "_emulator_types_8h.html#a42ce5df37bd1a9fb5d14a368308bc007", [
       [ "FLAG_XFILES", "_emulator_types_8h.html#a42ce5df37bd1a9fb5d14a368308bc007a5157b67c5533bce30a501051680f260d", null ],
       [ "FLAG_CNF_DEBUG", "_emulator_types_8h.html#a42ce5df37bd1a9fb5d14a368308bc007a64f2c007c359e48580705b13e2b1523d", null ],

@@ -61,8 +61,9 @@ var namespacevc64 =
     [ "DiskAPI", "structvc64_1_1_disk_a_p_i.html", "structvc64_1_1_disk_a_p_i" ],
     [ "DmaDebuggerAPI", "structvc64_1_1_dma_debugger_a_p_i.html", "structvc64_1_1_dma_debugger_a_p_i" ],
     [ "DriveAPI", "structvc64_1_1_drive_a_p_i.html", "structvc64_1_1_drive_a_p_i" ],
-    [ "EmulatorConfig", "structvc64_1_1_emulator_config.html", "structvc64_1_1_emulator_config" ],
-    [ "EmulatorInfo", "structvc64_1_1_emulator_info.html", null ],
+    [ "EmulatorConfig", "structvc64_1_1_emulator_config.html", null ],
+    [ "EmulatorInfo", "structvc64_1_1_emulator_info.html", "structvc64_1_1_emulator_info" ],
+    [ "EmulatorStats", "structvc64_1_1_emulator_stats.html", "structvc64_1_1_emulator_stats" ],
     [ "Error", "structvc64_1_1_error.html", "structvc64_1_1_error" ],
     [ "ExpansionPortAPI", "structvc64_1_1_expansion_port_a_p_i.html", "structvc64_1_1_expansion_port_a_p_i" ],
     [ "Inspectable", "classvc64_1_1_inspectable.html", null ],
@@ -238,6 +239,7 @@ var namespacevc64 =
     [ "ERROR_CODE", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28c", [
       [ "ERROR_OK", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28caadeb5032c03491611646c1c64f7c0e0c", null ],
       [ "ERROR_UNKNOWN", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28ca2c8108ceb9a85cecbbe3af50dbc1cf8c", null ],
+      [ "ERROR_LAUNCH", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28caab5378f9997697f95e7d273165241b0b", null ],
       [ "ERROR_POWERED_OFF", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28cad15dfe854b0141a245bd0983c5421305", null ],
       [ "ERROR_POWERED_ON", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28ca237d77aa10791ffeba791b0cc3c44019", null ],
       [ "ERROR_RUNNING", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28cadc7fcc7400d3490d5bd58a225c210434", null ],
@@ -291,6 +293,7 @@ var namespacevc64 =
       [ "ERROR_FS_EXPECTED_MAX", "namespacevc64.html#a4db9ee29f2ff83c71567c12f6bfbf28ca85910c60d08d20a7c047d3bed7b9f79d", null ]
     ] ],
     [ "EXEC_STATE", "namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700", [
+      [ "STATE_UNINIT", "namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a0075eeb0f3377fa2dad84d3656ab8c6d", null ],
       [ "STATE_OFF", "namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a4038ca872e1ed104c16122c365bd3ca0", null ],
       [ "STATE_PAUSED", "namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700a6291ce9aab12208cc66968c97a1ce7dd", null ],
       [ "STATE_RUNNING", "namespacevc64.html#aa4018d15b52beb38771c7a26ccf90700addfe11c6d06c4e27bd6efc18cc4862a6", null ],

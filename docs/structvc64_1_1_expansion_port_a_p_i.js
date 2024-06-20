@@ -1,7 +1,7 @@
 var structvc64_1_1_expansion_port_a_p_i =
 [
     [ "attachCartridge", "structvc64_1_1_expansion_port_a_p_i.html#acf5bc139239eea75eb3d4c976d4e753a", null ],
-    [ "attachCartridge", "structvc64_1_1_expansion_port_a_p_i.html#ae3992e6967645b8bf47b53d7012abf00", null ],
+    [ "attachCartridge", "structvc64_1_1_expansion_port_a_p_i.html#aaca5f5a398aea248934f52f4cee5a8f9", null ],
     [ "attachGeoRam", "structvc64_1_1_expansion_port_a_p_i.html#aff022858efad6a978d70268e69e51b84", null ],
     [ "attachIsepicCartridge", "structvc64_1_1_expansion_port_a_p_i.html#a526b5082083e996e3be0499a6b1f16d2", null ],
     [ "attachReu", "structvc64_1_1_expansion_port_a_p_i.html#a26a6e95ec5959111e54a0266837694ba", null ],

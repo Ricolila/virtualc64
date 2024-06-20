@@ -50,5 +50,6 @@ var searchData=
   ['flag_5fwarp_5fdebug_47',['FLAG_WARP_DEBUG',['../namespacevc64.html#a42ce5df37bd1a9fb5d14a368308bc007a544311f2a693a9c1789ac74f504a2eea',1,'vc64']]],
   ['flag_5fxfiles_48',['FLAG_XFILES',['../namespacevc64.html#a42ce5df37bd1a9fb5d14a368308bc007a5157b67c5533bce30a501051680f260d',1,'vc64']]],
   ['flash_49',['flash',['../structvc64_1_1_c64_a_p_i.html#ae027739c668a89a1f0332f16853fc4d3',1,'vc64::C64API::flash(const MediaFile &amp;file)'],['../structvc64_1_1_c64_a_p_i.html#a08b2a7b00413a8d9f1eca2356dfbd860',1,'vc64::C64API::flash(const MediaFile &amp;file, isize item)'],['../structvc64_1_1_c64_a_p_i.html#a3e377de1e8e777d5933dcc5c99b607c7',1,'vc64::C64API::flash(const FileSystem &amp;fs, isize item)']]],
-  ['fstypes_2eh_50',['FSTypes.h',['../_f_s_types_8h.html',1,'']]]
+  ['fps_50',['fps',['../structvc64_1_1_emulator_stats.html#a63da2a617b72a1630998a4d8b4d26cd3',1,'vc64::EmulatorStats']]],
+  ['fstypes_2eh_51',['FSTypes.h',['../_f_s_types_8h.html',1,'']]]
 ];

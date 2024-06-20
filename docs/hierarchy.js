@@ -16,6 +16,7 @@ var hierarchy =
     [ "DriveAPI", "structvc64_1_1_drive_a_p_i.html", null ],
     [ "EmulatorConfig", "structvc64_1_1_emulator_config.html", null ],
     [ "EmulatorInfo", "structvc64_1_1_emulator_info.html", null ],
+    [ "EmulatorStats", "structvc64_1_1_emulator_stats.html", null ],
     [ "Exception", "structvc64_1_1util_1_1_exception.html", [
       [ "Error", "structvc64_1_1_error.html", null ]
     ] ],

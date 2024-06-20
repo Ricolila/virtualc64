@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/Snapshot.h Source File</title>
+<title>VirtualC64: Snapshot.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -168,7 +168,7 @@ $(function(){initNavTree('_snapshot_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    Thumbnail screenshot;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">class </span>Snapshot : <span class="keyword">public</span> AnyFile, <span class="keyword">public</span> Dumpable {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">class </span>Snapshot : <span class="keyword">public</span> AnyFile {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -176,7 +176,7 @@ $(function(){initNavTree('_snapshot_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Class methods</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;path);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    </div>
@@ -184,7 +184,7 @@ $(function(){initNavTree('_snapshot_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Initializing</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    Snapshot(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    Snapshot(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Snapshot(<span class="keyword">const</span> u8 *buf, isize len) <span class="keywordflow">throws</span> { init(buf, len); }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    Snapshot(isize capacity);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    Snapshot(C64 &amp;c64);</div>
@@ -202,7 +202,7 @@ $(function(){initNavTree('_snapshot_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> FILETYPE_SNAPSHOT; }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> finalizeRead() throws override;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>

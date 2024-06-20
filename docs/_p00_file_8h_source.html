@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VirtualC64: /Users/hoff/Retro/virtualc64/Emulator/Media/P00File.h Source File</title>
+<title>VirtualC64: P00File.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -136,7 +136,7 @@ $(function(){initNavTree('_p00_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(<span class="keyword">const</span> fs::path &amp;path);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isCompatible(std::istream &amp;stream);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('_p00_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    P00File() : AnyCollection() { }</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    P00File(isize capacity) : AnyCollection(capacity) { }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    P00File(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    P00File(<span class="keyword">const</span> fs::path &amp;path) <span class="keywordflow">throws</span> { init(path); }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    P00File(<span class="keyword">const</span> u8 *buf, isize len) <span class="keywordflow">throws</span> { init(buf, len); }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    P00File(<span class="keyword">class</span> FileSystem &amp;fs) <span class="keywordflow">throws</span> { init(fs); }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
@@ -167,7 +167,7 @@ $(function(){initNavTree('_p00_file_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Methods from AnyFile</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> isCompatiblePath(<span class="keyword">const</span> fs::path &amp;path)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(path); }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">bool</span> isCompatibleStream(std::istream &amp;stream)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> isCompatible(stream); }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    FileType type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> FILETYPE_P00; }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    PETName&lt;16&gt; getName() <span class="keyword">const override</span>;</div>

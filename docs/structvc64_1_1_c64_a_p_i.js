@@ -10,11 +10,11 @@ var structvc64_1_1_c64_a_p_i =
     [ "getRomTraits", "structvc64_1_1_c64_a_p_i.html#a0055704c64d7a4761fb67c3e25fbfee0", null ],
     [ "getSlotInfo", "structvc64_1_1_c64_a_p_i.html#ace891c8b2d12349cc67f9c8019523cdb", null ],
     [ "hardReset", "structvc64_1_1_c64_a_p_i.html#ad3afdfe6da24bfbfb3a8d6cf03c666cf", null ],
+    [ "loadRom", "structvc64_1_1_c64_a_p_i.html#ac2536bf397b5d4a7c9759bccd495c21c", null ],
     [ "loadRom", "structvc64_1_1_c64_a_p_i.html#a76f46bc2d78c9e7dac1b63b452b4b5a1", null ],
-    [ "loadRom", "structvc64_1_1_c64_a_p_i.html#a88b7d46e1b2516a233d8a28aae34c616", null ],
     [ "loadSnapshot", "structvc64_1_1_c64_a_p_i.html#a0d34910ddc5f264d7fad79986a204645", null ],
     [ "removeInspectionTarget", "structvc64_1_1_c64_a_p_i.html#a99b5f97ef3cdb8348b0669dd0979829a", null ],
-    [ "saveRom", "structvc64_1_1_c64_a_p_i.html#abe1de0fc85ef1807c8a773754e248e30", null ],
+    [ "saveRom", "structvc64_1_1_c64_a_p_i.html#a59ad9406bbb884fd13050cfb6e01f7ae", null ],
     [ "setInspectionTarget", "structvc64_1_1_c64_a_p_i.html#a4830a6b34ff3fd8a0c1cb01ef4603db5", null ],
     [ "softReset", "structvc64_1_1_c64_a_p_i.html#a82c15f42f746b29413b1a1b3a8dd198e", null ],
     [ "takeSnapshot", "structvc64_1_1_c64_a_p_i.html#a91440eebb6091617759bdaec2e850f0a", null ]

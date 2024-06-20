@@ -1,4 +1,4 @@
-<map id="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Mouse" name="/Users/hoff/Retro/virtualc64/Emulator/Peripherals/Mouse">
+<map id="Mouse" name="Mouse">
 <area shape="rect" id="node1" href="dir_8b75e2c966dbd6e9d814cce494bf41c3.html" title="Joystick" alt="" coords="26,126,97,152"/>
 <area shape="rect" id="node2" href="dir_71c828aa706dc687262082dc30a81d57.html" title="Mouse" alt="" coords="31,52,92,78"/>
 <area shape="poly" id="edge1" href="dir_000017_000011.html" alt="" coords="64,78,64,110,59,110,59,78"/>

@@ -20,6 +20,5 @@ var searchData=
   ['virtualc64_17',['VirtualC64',['../classvc64_1_1_virtual_c64.html',1,'VirtualC64'],['../index.html',1,'VirtualC64']]],
   ['virtualc64_2eh_18',['VirtualC64.h',['../_virtual_c64_8h.html',1,'']]],
   ['virtualc64types_2eh_19',['VirtualC64Types.h',['../_virtual_c64_types_8h.html',1,'']]],
-  ['visible_5fpixels_20',['VISIBLE_PIXELS',['../namespacevc64_1_1_p_a_l.html#a8cb5325fc592f6ef71d817f595b4f158',1,'vc64::PAL::VISIBLE_PIXELS'],['../namespacevc64_1_1_n_t_s_c.html#a8cb5325fc592f6ef71d817f595b4f158',1,'vc64::NTSC::VISIBLE_PIXELS']]],
-  ['vsync_21',['vsync',['../structvc64_1_1_emulator_config.html#a1196e170e242f04e8ee8ab20dff42d6a',1,'vc64::EmulatorConfig']]]
+  ['visible_5fpixels_20',['VISIBLE_PIXELS',['../namespacevc64_1_1_p_a_l.html#a8cb5325fc592f6ef71d817f595b4f158',1,'vc64::PAL::VISIBLE_PIXELS'],['../namespacevc64_1_1_n_t_s_c.html#a8cb5325fc592f6ef71d817f595b4f158',1,'vc64::NTSC::VISIBLE_PIXELS']]]
 ];
